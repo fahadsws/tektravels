@@ -22,6 +22,9 @@ const style = StyleSheet.create({
     },
     bgwhite:{
         backgroundColor:'white'
+    },
+    bgblack:{
+        backgroundColor:'black'
     }
 });
 
