@@ -3,7 +3,7 @@ import style from "../utils/Style";
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from "react-native-responsive-dimensions";
 import LottieView from "lottie-react-native";
 
-export default function Splash() {
+export default function Splash({navigation}) {
     return (
         <>
             <View style={[{
