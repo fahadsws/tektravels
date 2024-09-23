@@ -3,7 +3,7 @@ import { Text, TextInput, View, TouchableOpacity } from "react-native";
 import style from "../utils/Style";
 import Icon from "react-native-vector-icons/Ionicons";
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from "react-native-responsive-dimensions";
-export default function Login() {
+export default function Login({navigation}) {
     const [passwordVisible, setPasswordVisible] = useState(false);
     return (
         <>
@@ -18,7 +18,7 @@ export default function Login() {
                         <View style={[style.bgcomoncolor, { borderRadius: 200, width: responsiveWidth(90), paddingHorizontal: responsiveWidth(5), paddingVertical: responsiveHeight(0.8) }]}>
                             <TextInput placeholder="Enter Your Email" placeholderTextColor={'#160C28'} style={{ color: '#160C28' }} />
                         </View>
-                        <TouchableOpacity >
+                        <TouchableOpacity onPress={()=>navigation.navigate('Forgot')} >
                             <Text style={[style.comoncolor, { fontWeight: '500', textAlign: 'right', fontSize: responsiveFontSize(1.5) }]}>Forgot Password?</Text>
                         </TouchableOpacity>
                         <View style={[style.bgcomoncolor, { borderRadius: 100, width: responsiveWidth(90), paddingHorizontal: responsiveWidth(5), paddingVertical: responsiveHeight(0.8), flexDirection: 'row', alignItems: 'center' }]}>
@@ -37,7 +37,7 @@ export default function Login() {
 
                     <View style={{ gap: responsiveHeight(2.8) }}>
                         <View>
-                            <TouchableOpacity style={[style.bgblack, { paddingVertical: responsiveHeight(2.4), alignItems: 'center', borderWidth: 1, borderColor: '#EFCB68', borderRadius: 100 }]}>
+                            <TouchableOpacity onPress={()=>navigation.navigate('Home')} style={[style.bgblack, { paddingVertical: responsiveHeight(2.4), alignItems: 'center', borderWidth: 1, borderColor: '#EFCB68', borderRadius: 100 }]}>
                                 <Text style={[style.comoncolor, { fontWeight: 'bold' }]}>Log In</Text>
                             </TouchableOpacity>
                         </View>

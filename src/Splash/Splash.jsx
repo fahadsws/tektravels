@@ -14,7 +14,7 @@ export default function Splash({navigation}) {
 
 
                 <View style={{ gap: responsiveHeight(1.5) }}>
-                    <Text style={[style.white, { textAlign: 'left', fontWeight: 'bold', fontSize: responsiveFontSize(3) }]}>
+                    <Text style={[style.white, { textAlign: 'left', fontWeight: 'bold', fontSize: responsiveFontSize(3.2) }]}>
                         Welcome to the <Text style={[style.comoncolor, { fontSize: responsiveFontSize(2.9) }]}>Tek {`\n`}Travels</Text> Internal Drivers App
                     </Text>
                     <Text style={[style.white, { textAlign: 'left', fontSize: responsiveFontSize(1.5), fontWeight: '300' }]}>
