@@ -2,11 +2,15 @@ import { Image, Text, TouchableOpacity, View } from "react-native";
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from "react-native-responsive-dimensions";
 import style from "../../../utils/Style";
 import Icon from 'react-native-vector-icons/FontAwesome5';
+import { useNavigation } from "@react-navigation/native";
+
 
 export default function BookiengCard() {
+  const nav = useNavigation()
+    
     return (
         <>
-            <TouchableOpacity style={[style.bggrey, {
+            <TouchableOpacity onPress={()=>nav.navigate('Detail')} style={[style.bggrey, {
                 borderRadius: 10, paddingVertical: responsiveWidth(4),
                 paddingHorizontal: responsiveWidth(5), justifyContent: 'center'
             }]}>
