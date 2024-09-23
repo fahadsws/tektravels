@@ -5,8 +5,6 @@ import { responsiveFontSize, responsiveHeight, responsiveWidth } from "react-nat
 import Footer from "../Componets/Common/Footer/Footer";
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import Icon2 from 'react-native-vector-icons/FontAwesome';
-
-
 export default function Detail() {
     return (
         <>
