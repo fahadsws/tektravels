@@ -4,6 +4,9 @@ const style = StyleSheet.create({
     comoncolor: {
         color: '#b1ec73'
     },
+    comoncolor2: {
+        color: '#ffc21f'
+    },
     borderCommoncolor: {
         borderColor: '#b1ec73'
     },
@@ -17,8 +20,8 @@ const style = StyleSheet.create({
     white: {
         color: 'white'
     },
-    grey: {
-        color: 'grey'
+    bggrey: {
+        backgroundColor: '#161616'
     },
     bgwhite:{
         backgroundColor:'white'
